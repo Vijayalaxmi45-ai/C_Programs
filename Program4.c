@@ -1,13 +1,17 @@
-/*WAP to find the area of the circle. Take radius of circle from user as input and print the result in below given format.
-Expected output format – “Area of circle is A having the radius R”. Replace A with area & R with radius.*/
+/*Write a program to check whether a given number is a three-digit number or not.*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    float r,area;
-    printf("Enter radious of circle :");
-    scanf("%f",&r);
-    area= 3.14*r*r;
-    printf("Area of circle is %f having the radius %f",area,r);
-    return 0;
+    int no;
+    printf("Enter a number:");
+    scanf("%d",&no);
+    if(no>99 && no<1000)
+    {
+        printf("Three digit number!!!");
+    }
+    else
+    {
+        printf("Not a three digit number!!!");
+    }
 }
