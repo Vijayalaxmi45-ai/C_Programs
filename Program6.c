@@ -1,12 +1,16 @@
-/*WAP to print the name of the user in double quotes.
-Expected output format – “Hello , Amit Kumar”*/
+/*Write a program to check whether a given year is a leap year or not.*/
 #include<stdio.h>
 #include<conio.h>
 int main()
 {
-    char name[50];
-    printf("Enter Your Name :");
-    gets(name);
-    printf("\"Hello , %s \"",name);
+    int year;
+    printf("Enter a Year :");
+    scanf("%d",&year);
+    if(year%4==0 && year%100!=0 || year%400==0){
+        printf("%d is a Leap Year",year);
+    }
+    else{
+        printf("%d is not a Leap Year",year);
+    }
     return 0;
 }
